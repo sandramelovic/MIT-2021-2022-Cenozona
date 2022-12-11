@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "250430106940",
+    "project_id": "cenozona",
+    "storage_bucket": "cenozona.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:250430106940:android:436b69d4b5d8ef14be4239",
+        "android_client_info": {
+          "package_name": "com.example.cenozona"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "250430106940-cn5h9euqslvhoc9t69c8183clmh10jnp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCTHUaptnh8rrpo8WPXm2GWrptGDYD2zOc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "250430106940-cn5h9euqslvhoc9t69c8183clmh10jnp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

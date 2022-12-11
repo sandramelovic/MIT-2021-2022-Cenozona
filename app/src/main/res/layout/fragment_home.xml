@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment"
+    android:background="#D6B98F">
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+   <LinearLayout
+       android:id="@+id/home_lay"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical">
+       <EditText
+           android:elevation="3dp"
+           android:id="@+id/search_box"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+           android:padding="13dp"
+           android:hint="Pretrazi svoje proizvode ovde"
+           android:drawablePadding="5dp"
+           android:background="@color/white"
+           android:drawableLeft="@drawable/icons_search"/>
+
+       <androidx.recyclerview.widget.RecyclerView
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:id="@+id/search_rec"
+           android:layout_marginRight="10dp"
+           android:layout_marginLeft="10dp"/>
+
+       <LinearLayout
+           android:layout_marginLeft="10dp"
+           android:layout_marginRight="10dp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:weightSum="2">
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               android:textStyle="bold"
+               android:textSize="18dp"
+               android:text="Popularni proizvodi"/>
+           <TextView
+               android:id="@+id/view_all_popular"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               android:textStyle="bold"
+               android:gravity="end"
+               android:textSize="16dp"
+               android:layout_marginRight="7dp"
+                android:textColor="#51BF04"
+               android:text="Pogledaj sve"/>
+
+       </LinearLayout>
+
+       <androidx.recyclerview.widget.RecyclerView
+           android:id="@+id/pop_rec"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_margin="5dp"/>
+
+       <LinearLayout
+           android:layout_marginLeft="10dp"
+           android:layout_marginRight="10dp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:weightSum="2">
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               android:textStyle="bold"
+               android:textSize="18dp"
+               android:text="Pretrazi proizvode"/>
+           <TextView
+               android:id="@+id/view_all_explore"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               android:textStyle="bold"
+               android:gravity="end"
+               android:textSize="16dp"
+               android:layout_marginRight="7dp"
+               android:textColor="#51BF04"
+               android:text="Pogledaj sve"/>
+
+       </LinearLayout>
+
+       <androidx.recyclerview.widget.RecyclerView
+           android:id="@+id/explore_rec"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_margin="5dp"/>
+
+       <LinearLayout
+           android:layout_marginLeft="10dp"
+           android:layout_marginRight="10dp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:weightSum="2">
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               android:textStyle="bold"
+               android:textSize="18dp"
+               android:text="Preporuceni proizvodi"/>
+           <TextView
+               android:id="@+id/view_all_recommended"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               android:textStyle="bold"
+               android:gravity="end"
+               android:textSize="16dp"
+               android:layout_marginRight="7dp"
+               android:textColor="#51BF04"
+               android:text="Pogledaj sve"/>
+
+       </LinearLayout>
+
+       <androidx.recyclerview.widget.RecyclerView
+           android:id="@+id/recommended_rec"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_margin="5dp"/>
+
+   </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

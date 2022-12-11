@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:text="Izmeni opis proizvoda: "
+        android:padding="10dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></TextView>
+
+    <EditText
+        android:padding="10dp"
+        android:id="@+id/updateDetailedText_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></EditText>
+
+    <TextView
+        android:text="Izmeni ocenu proizvoda: "
+        android:padding="10dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></TextView>
+
+    <EditText
+        android:padding="10dp"
+        android:id="@+id/updateRating_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></EditText>
+
+    <TextView
+        android:text="Izmeni cene proizvoda: "
+        android:padding="10dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></TextView>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1"
+        android:layout_marginTop="20dp">
+
+        <TableRow>
+
+            <ImageView
+                android:layout_height="30dp"
+                android:layout_weight="@android:integer/config_longAnimTime"
+                android:src="@drawable/dis"/>
+
+
+            <EditText
+                android:id="@+id/dis_update_dialog"
+                android:layout_marginRight="30dp"
+                android:padding="3dip"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:inputType="number"
+                android:digits="0123456789"/>
+        </TableRow>
+
+        <TableRow>
+
+            <ImageView
+                android:layout_height="30dp"
+                android:layout_weight="@android:integer/config_longAnimTime"
+                android:src="@drawable/tempo" />
+
+
+            <EditText
+                android:id="@+id/tempo_update_dialog"
+                android:layout_marginRight="30dp"
+                android:padding="3dip"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:inputType="number"
+                android:digits="0123456789"/>
+        </TableRow>
+
+        <TableRow>
+
+            <ImageView
+                android:layout_height="30dp"
+                android:layout_weight="@android:integer/config_longAnimTime"
+                android:src="@drawable/maxi"/>
+
+            <EditText
+                android:id="@+id/maxi_update_dialog"
+                android:layout_marginRight="30dp"
+                android:padding="3dip"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:inputType="number"
+                android:digits="0123456789"/>
+        </TableRow>
+
+        <TableRow>
+
+            <ImageView
+                android:layout_height="30dp"
+                android:layout_weight="@android:integer/config_longAnimTime"
+                android:src="@drawable/roda" />
+
+            <EditText
+                android:id="@+id/roda_update_dialog"
+                android:layout_marginRight="30dp"
+                android:padding="3dip"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:inputType="number"
+                android:digits="0123456789"/>
+        </TableRow>
+
+        <TableRow>
+
+            <ImageView
+                android:layout_height="30dp"
+                android:layout_weight="@android:integer/config_longAnimTime"
+                android:src="@drawable/lidl" />
+
+            <EditText
+                android:id="@+id/lidl_update_dialog"
+                android:layout_marginRight="30dp"
+                android:padding="3dip"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:inputType="number"
+                android:digits="0123456789"/>
+        </TableRow>
+
+        <TableRow>
+
+
+        </TableRow>
+    </TableLayout>
+
+
+    <Button
+        android:id="@+id/updateDetailedText_dialog_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Izmeni" />
+</LinearLayout>

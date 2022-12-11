@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+        android:scrollbarAlwaysDrawVerticalTrack="true">
+
+
+
+    <TextView
+        android:text="Naziv proizvoda: "
+        android:padding="10dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></TextView>
+
+    <EditText
+        android:padding="10dp"
+        android:id="@+id/addName_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></EditText>
+    <TextView
+        android:text="Tip proizvoda: "
+        android:padding="10dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></TextView>
+
+    <EditText
+        android:padding="10dp"
+        android:id="@+id/addType_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></EditText>
+    <TextView
+        android:text="Ocena proizvoda: "
+        android:padding="10dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></TextView>
+
+    <EditText
+        android:padding="10dp"
+        android:id="@+id/addRating_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></EditText>
+    <TextView
+        android:text="Opis proizvoda: "
+        android:padding="10dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></TextView>
+
+    <EditText
+        android:padding="10dp"
+        android:id="@+id/addText_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></EditText>
+
+    <TextView
+        android:text="Dodaj sliku proizvoda: "
+        android:padding="10dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></TextView>
+
+    <EditText
+        android:padding="10dp"
+        android:id="@+id/addPhoto_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></EditText>
+    <TextView
+        android:text="Cene proizvoda: "
+        android:padding="10dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></TextView>
+
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1"
+        android:layout_marginTop="20dp">
+
+        <TableRow>
+
+            <ImageView
+                android:layout_height="30dp"
+                android:layout_weight="@android:integer/config_longAnimTime"
+                android:src="@drawable/dis"/>
+
+
+            <EditText
+                android:id="@+id/dis_add_dialog"
+                android:layout_marginRight="30dp"
+                android:padding="3dip"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:inputType="number"
+                android:digits="0123456789"/>
+        </TableRow>
+
+        <TableRow>
+
+            <ImageView
+                android:layout_height="30dp"
+                android:layout_weight="@android:integer/config_longAnimTime"
+                android:src="@drawable/tempo" />
+
+
+            <EditText
+                android:id="@+id/tempo_add_dialog"
+                android:layout_marginRight="30dp"
+                android:padding="3dip"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:inputType="number"
+                android:digits="0123456789"/>
+        </TableRow>
+
+        <TableRow>
+
+            <ImageView
+                android:layout_height="30dp"
+                android:layout_weight="@android:integer/config_longAnimTime"
+                android:src="@drawable/maxi"/>
+
+            <EditText
+                android:id="@+id/maxi_add_dialog"
+                android:layout_marginRight="30dp"
+                android:padding="3dip"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:inputType="number"
+                android:digits="0123456789"/>
+        </TableRow>
+
+        <TableRow>
+
+            <ImageView
+                android:layout_height="30dp"
+                android:layout_weight="@android:integer/config_longAnimTime"
+                android:src="@drawable/roda" />
+
+            <EditText
+                android:id="@+id/roda_add_dialog"
+                android:layout_marginRight="30dp"
+                android:padding="3dip"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:inputType="number"
+                android:digits="0123456789"/>
+        </TableRow>
+
+        <TableRow>
+
+            <ImageView
+                android:layout_height="30dp"
+                android:layout_weight="@android:integer/config_longAnimTime"
+                android:src="@drawable/lidl" />
+
+            <EditText
+                android:id="@+id/lidl_add_dialog"
+                android:layout_marginRight="30dp"
+                android:padding="3dip"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:inputType="number"
+                android:digits="0123456789"/>
+        </TableRow>
+
+        <TableRow>
+
+
+        </TableRow>
+    </TableLayout>
+
+
+    <Button
+        android:id="@+id/add_new_product_dialog_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dodaj" />
+
+    </LinearLayout>
+
+</ScrollView>
